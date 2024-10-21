@@ -1,4 +1,3 @@
-
 * {
     /* outline: 2px solid red; */
     margin: 0px;
@@ -12,12 +11,30 @@ html {
 
 body {
     background-color: #FFFBDA;
+    font-family: 'Nunito', sans-serif;
 }
 
 nav {
     /* img {} */
     display: flex;
 }
+
+/* ///////  nav media */
+@media (width <=800px) {
+  
+
+
+}
+
+@media (orientation: portrait) {
+    
+
+
+
+
+}
+
+
 
 .logo {
     flex: 1;
@@ -38,11 +55,20 @@ nav a {
     align-content: center;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2,
+h3 {
+    font-size: 2, 5rem;
+}
+
 h1,
 h2,
 h3 {
     color: #ED9455;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -78,6 +104,7 @@ nav {
     /* max-height: 50vh;
     max-width: 80vw ; */
 }
+
 #header-thankyou {
     display: flex;
     flex-direction: column;
@@ -107,6 +134,10 @@ nav {
 }
 
 #header-contacts {
+    p {
+        color: #ED9455;
+    }
+
     background-color: #FFEC9E;
     display: flex;
     flex-direction: column;
@@ -127,17 +158,69 @@ nav {
     margin: 0 auto;
     text-align: center;
     gap: 30px;
+
+}
+
+@media (max-width: 768px) {
+    .creators {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
 }
 
 .articles {
     min-width: 25vw;
     background-color: #FFEC9E;
+
+}
+
+article img {
+    border-radius: 5px;
 }
 
 .ceator-p {
     padding: 20px;
 }
 
+/*  transition  */
+.articles {
+    min-width: 25vw;
+    background-color: #FFEC9E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Voeg een zachte randradius toe */
+    border-radius: 10px;
+}
+
+/* Hover-effect op creators */
+.articles:hover {
+    transform: scale(1.05);
+    /* Vergroot lichtjes bij hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Voeg schaduw toe */
+}
+
+/* Extra styling voor afbeelding bij hover */
+.articles:hover .creator-img img {
+    transform: scale(1);
+    /* Zoom-in effect op afbeelding */
+    transition: transform 0.3s ease;
+    /* Zorgt ervoor dat het effect soepel is */
+}
+
+/* Zorg ervoor dat de tekst niet te dichtbij de randen komt */
+.ceator-p {
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Kleurverandering van de tekst bij hover */
+.articles:hover .ceator-p p {
+    color: #ED9455;
+    /* Verander de tekstkleur bij hover */
+}
+
+/*  */
 main {
     display: flex;
     flex-direction: column;
@@ -238,8 +321,8 @@ form {
 }
 
 .form-button {
-    display: flex; 
-    display: flex; 
+    display: flex;
+    display: flex;
     align-self: center;
     margin: 3vh 0;
 }
