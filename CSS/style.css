@@ -239,6 +239,7 @@ form {
 
 .form-button {
     display: flex; 
+    display: flex; 
     align-self: center;
     margin: 3vh 0;
 }
