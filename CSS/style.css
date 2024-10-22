@@ -19,23 +19,6 @@ nav {
     display: flex;
 }
 
-/* ///////  nav media */
-@media (width <=800px) {
-  
-
-
-}
-
-@media (orientation: portrait) {
-    
-
-
-
-
-}
-
-
-
 .logo {
     flex: 1;
     margin-left: 15px;
@@ -48,11 +31,79 @@ nav img {
 nav a {
     text-decoration: none;
     color: white;
-    margin: 0 30px 0 0;
+}
+
+.a-center {
+    display: flex;
+    flex-wrap: no-wrap;
+    align-content: space-between;
 }
 
 .links {
+    display: flex;
+    justify-content: space-between;
     align-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+@media (width <=800px) {
+
+    .a-links {
+        display: flex;
+        align-self: center;
+    }
+
+    .logo {
+        align-content: center;
+        margin-top: 10px;
+    }
+
+    .a-center {
+        background-color: #d28d43;
+        border: 2px solid #a56b2d;
+        width: 100vw;
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    nav {
+        img {
+            width: 20vw;
+            justify-content: center;
+        }
+
+        /* a {
+            background-color: #db630c;
+            width: 70vw;
+            } */
+        height: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .links {
+        /* gap: 15px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    header {
+       
+        display: flex;
+        /* align-items: stretch; */
+        justify-content: center;
+    }
+  
+
 }
 
 h1 {
@@ -94,7 +145,8 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding: 100px 200px;
+    align-content: center;
+    /* padding: 100px 200px; */
     border-bottom: 2px solid black;
     min-height: calc(90vh - 5px);
     background-image: url(../img/prototyope.jpg);
@@ -110,7 +162,7 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding: 100px 200px;
+    /* padding: 100px 200px; */
     border-bottom: 2px solid black;
     min-height: calc(90vh - 80px);
     background-image: url(../img/robot2.jpg);
@@ -350,7 +402,6 @@ form {
 /* @media jade */
 
 @media (width <=800px) {
-
     .form {
         min-width: 90vw;
 
@@ -370,11 +421,9 @@ form {
 
     }
 
-
 }
 
 @media (orientation: portrait) {
-
 
     .form {
         min-width: 90vw;
