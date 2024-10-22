@@ -141,12 +141,11 @@ nav {
 
 #header-index {
     display: flex;
-    color: white;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* gap: 50px; */
-    align-content: center;
+    justify-content: center;
+    /* align-content: center; */
+    gap: 50px;
     /* padding: 100px 200px; */
     border-bottom: 2px solid black;
     min-height: calc(90vh - 5px);
@@ -163,8 +162,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    /* gap: 50px; */
+    /* align-content: center; */
+    gap: 50px;
     /* padding: 100px 200px; */
     border-bottom: 2px solid black;
     min-height: calc(90vh - 80px);
@@ -179,6 +178,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* align-content: center; */
+    gap: 50px;
     /* gap: 50px; */
     /* padding: 100px 200px; */
     border-bottom: 2px solid black;
