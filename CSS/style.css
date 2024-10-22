@@ -48,64 +48,6 @@ nav a {
 
 }
 
-@media (width <=800px) {
-
-    .a-links {
-        display: flex;
-        align-self: center;
-    }
-
-    .logo {
-        align-content: center;
-        margin-top: 10px;
-    }
-
-    .a-center {
-        background-color: #d28d43;
-        border: 2px solid #a56b2d;
-        width: 100vw;
-        height: 4vh;
-        display: flex;
-        justify-content: center;
-
-
-    }
-
-    nav {
-        img {
-            width: 20vw;
-            justify-content: center;
-        }
-
-        /* a {
-            background-color: #db630c;
-            width: 70vw;
-            } */
-        height: 60vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 2rem;
-    }
-
-    .links {
-        /* gap: 15px; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    header {
-       padding: 15vw;
-        display: flex;
-        /* align-items: stretch; */
-        justify-content: center;
-    }
-  
-
-}
-
 h1 {
     font-size: 3rem;
 }
@@ -220,14 +162,6 @@ nav {
 
 }
 
-@media (max-width: 768px) {
-    .creators {
-        flex-direction: column;
-        align-items: center;
-        width: 90vw;
-    }
-}
-
 .articles {
     min-width: 25vw;
     background-color: #FFEC9E;
@@ -289,22 +223,6 @@ main img {
     width: 100%;
     height: 30vh;
     object-fit: contain
-}
-
-footer {
-    background-color: #ED9455;
-    display: flex;
-}
-
-footer img {
-    width: 4vw;
-}
-
-footer a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: white;
-
 }
 
 /* CSS jade form*/
@@ -406,9 +324,78 @@ form {
     cursor: pointer;
 }
 
+
+footer {
+    background-color: #ED9455;
+    /* display: flex; */
+}
+
+
+footer img {
+    flex: 1;
+    width: 4vw;
+}
+
+footer a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+
+}
+
 /* @media jade */
 
 @media (width <=800px) {
+
+    .a-links {
+        display: flex;
+        align-self: center;
+    }
+
+    .a-center {
+        background-color: #d28d43;
+        border: 2px solid #a56b2d;
+        width: 100vw;
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    nav {
+        img {
+            width: 20vw;
+            justify-content: center;
+        }
+
+        height: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .links {
+        /* gap: 15px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    header {
+        padding: 15vw;
+        display: flex;
+        /* align-items: stretch; */
+        justify-content: center;
+    }
+    .creators {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
     .form {
         min-width: 90vw;
 
@@ -423,10 +410,8 @@ form {
 
     }
 
-    .header-p {
-        max-width: 60vh;
+   
 
-    }
 
 }
 
