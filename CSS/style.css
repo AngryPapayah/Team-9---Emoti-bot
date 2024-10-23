@@ -21,7 +21,7 @@ nav {
 
 }
 
-.logo {
+.logo  {
     flex: 1;
     margin-left: 15px;
 }
@@ -382,11 +382,11 @@ footer a {
 
 @media (width <=800px) {
 
-    .a-links {
+    /* .a-links {
         display: flex;
         align-self: center;
 
-    }
+    } */
 
     .a-center {
         /* background-color: #d28d43;
@@ -397,6 +397,7 @@ footer a {
         justify-content: center;
         /* padding: 5vh 5vw;   */
         width: 5vw;
+        /* padding: none; */
     }
 
     .logo {
@@ -425,9 +426,9 @@ footer a {
 
         a {
             border-width: 4vw 40vw;
+            padding: none;
         }
-
-
+        
     }
 
     header {
@@ -460,6 +461,7 @@ footer a {
     footer {
         height: 10vh;
     }
+
     #footer-section {
         display: flex;
         justify-content: center;
@@ -469,7 +471,7 @@ footer a {
         a {
             color: rgb(70, 49, 4);
         }
-        
+
     }
 
     .a-center-footer a:hover {
@@ -480,12 +482,65 @@ footer a {
     }
 
     .logo-footer img {
-        width: 8vw;
-        /* display: flex;
-        align-content: space-evenly; */
-        
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+
     }
 
+    /* .a-links {
+        display: flex;
+        align-self: center;
+
+    } */
+
+    .a-center-footer {
+        /* background-color: #d28d43;
+        border: 2px solid #a56b2d;
+        width: 100vw;
+        height: 4vh; */
+        display: flex;
+        justify-content: center;
+        
+        /* padding: 5vh 5vw;   */
+        width: 5vw;
+    }
+
+    .logo-footer{
+        flex: none;
+    }
+    
+    footer .logo-footer {
+        flex: none;
+        margin-bottom: 3vw;
+    }
+
+    footer {
+        img {
+            width: 10vw;
+            justify-content: center;
+        }
+
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .links-footer {
+        /* gap: 15px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+        margin-right: none;
+
+        a {
+            border-width: 4vw 40vw;
+        }
+    }
+    
 
 }
 
