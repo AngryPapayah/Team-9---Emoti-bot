@@ -21,7 +21,7 @@ nav {
 
 }
 
-.logo  {
+.logo {
     flex: 1;
     margin-left: 15px;
 }
@@ -397,6 +397,7 @@ footer a {
         justify-content: center;
         /* padding: 5vh 5vw;   */
         width: 5vw;
+        
         /* padding: none; */
     }
 
@@ -423,12 +424,13 @@ footer a {
         flex-direction: column;
         justify-content: center;
         gap: 2vw;
+        max-width:fit-content;
 
         a {
             border-width: 4vw 40vw;
             padding: none;
         }
-        
+
     }
 
     header {
@@ -501,15 +503,15 @@ footer a {
         height: 4vh; */
         display: flex;
         justify-content: center;
-        
+
         /* padding: 5vh 5vw;   */
-        width: 5vw;
+        min-width: 5vw;
     }
 
-    .logo-footer{
+    .logo-footer {
         flex: none;
     }
-    
+
     footer .logo-footer {
         flex: none;
         /* margin-bottom: 3vw; */
@@ -517,10 +519,12 @@ footer a {
 
     footer {
         img {
+            margin-top: 2vw;
             width: 10vw;
             justify-content: center;
         }
 
+        gap: 5vw;
         height: 25vh;
         display: flex;
         flex-direction: column;
@@ -533,14 +537,14 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2vw;
+        gap: 5vw;
         margin-right: none;
 
         a {
             border-width: 4vw 40vw;
         }
     }
-    
+
 
 }
 
