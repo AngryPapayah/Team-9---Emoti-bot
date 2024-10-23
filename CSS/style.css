@@ -512,7 +512,7 @@ footer a {
     
     footer .logo-footer {
         flex: none;
-        margin-bottom: 3vw;
+        /* margin-bottom: 3vw; */
     }
 
     footer {
